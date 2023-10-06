@@ -20,5 +20,9 @@
 <input type="password" placeholder="确认密码" placeholder-class="plas" class="input"/>
 </view>
 
+<view class="click">注册</view>
+<view class="cha">
+<text class="no">已有账号，点我登录</text>
 
+</view>
 </view>

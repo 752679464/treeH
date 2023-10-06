@@ -44,3 +44,33 @@ page{
   justify-content: center;
   background-color: rgb(226, 221, 222);
 }
+
+.click{
+  width: 90%;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin: auto;
+  margin-top: 89rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: red;
+  text-align: center;
+  color: white;
+  font-size: 33rpx;
+
+}
+
+.cha{
+  width: 90%;
+  height: 50rpx;
+  margin: auto;
+  margin-top: 30rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+no{
+  color: black;
+  font-size: 28rpx;
+  margin-left: 15rpx;
+}
