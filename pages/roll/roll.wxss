@@ -1,1 +1,46 @@
 /* pages/roll/roll.wxss */
+page{
+  left: 0rpx;
+  right: 0rpx;
+  background-color: white;
+}
+
+.fir{
+  width: 90%;
+  height: 100rpx;
+  margin-top: 80rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(226, 221, 221);
+}
+
+.plas{
+  font-size: 30rpx;
+  color: gray;
+}
+
+.input{
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: black;
+  margin: auto;
+  margin-left: 20rpx;
+  width: 100%;
+}
+
+.sec{
+  width: 90%;
+  height: 100rpx;
+  margin-top: 30rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(226, 221, 220);
+}

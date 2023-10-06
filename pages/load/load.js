@@ -8,26 +8,70 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
 
+  next:function(){
+    console.log('66666')
+    console.log("userInfo",getApp().globalData.userInfo)//显示一下保存的用户信息（全家变量）
+    wx.redirectTo({
+      url: '/pages/login/login',
+    })//跳转页面
+
+  },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    // 查看是否授权
-    wx.getSetting({
-      success (res){
-        if (res.authSetting['scope.userInfo']) {
-          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
-          wx.getUserInfo({
-            success: function(res) {
-              console.log(res.userInfo)
-            }
-          })
+    var that = this;
+
+    wx.login({
+      success(res) {
+        if (res.code) {
+          //   //发起网络请求
+          //   wx.request({
+          //     url: 'https://example.com/onLogin',
+          //     data: {
+          //       code: res.code
+          //     }
+          //   })
+          console.log('成功获取授权')
+          // getApp().globalData.userInfo = res.userInfo//把微信用户信息存储到全局变量
+          // that.next();
+        }
+        else {
+        //   // 查看是否授权          
+          console.log('授权失败')
+
+        //   // wx.getSetting({
+        //   //   success(res) {
+        //   //     if (res.authSetting['scope.userInfo']) {
+        //   //       // 已经授权，可以直接调用 getUserInfo 获取头像昵称
+        //   //       wx.getUserInfo({
+        //   //         success: function (res) {
+        //   //           console.log(res.userInfo)
+        //   //         }
+        //   //       })
+        //     //   }
+        //     //   else
+        //     //     console.log('登录失败！' + res.errMsg)
+        //     // }
+        //   })
         }
       }
     })
+    wx.showLoading({
+      title: '加载中',
+    })
+
+
+    setTimeout(function () {
+      wx.hideLoading()
+    }, 2000)
+
   },
-  bindGetUserInfop (e) {
-    console.log(e.detail.userInfo)
+
+  bindGetUserInfop(e) {
+    getApp().globalData.userInfo = e.detail.userInfo//把微信用户信息存储到全局变量
+    this.next();
+    // console.log(e.detail.userInfo)
   },
   /**
    * 生命周期函数--监听页面初次渲染完成

@@ -14,6 +14,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    user:{},//后台返回的用户信息
+    userInfo: {},//微信获取的用户信息
   }
 })

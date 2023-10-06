@@ -1,8 +1,8 @@
 {
   "pages":[
+    "pages/roll/roll",
     "pages/load/load",
     "pages/login/login",
-    "pages/roll/roll",
     "pages/square/square",
     "pages/mine/mine",
     "pages/commit/commit",

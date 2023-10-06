@@ -1,2 +1,24 @@
 <!--pages/roll/roll.wxml-->
-<text>pages/roll/roll.wxml</text>
+<!-- <text>pages/roll/roll.wxml</text> -->
+
+<view class='background'>
+<view class="fir">
+<input type="text" placeholder="用户名" placeholder-class="plas" class="input"></input>
+
+</view>
+
+<view class="sec">
+<input type="number" placeholder="手机号" placeholder-class="plas" class="input"></input>
+
+</view>
+
+<view class="sec">
+<input type="password" placeholder="登录密码" placeholder-class="plas" class="input"/>
+</view>
+
+<view class="sec">
+<input type="password" placeholder="确认密码" placeholder-class="plas" class="input"/>
+</view>
+
+
+</view>
