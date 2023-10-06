@@ -42,5 +42,5 @@ page{
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: rgb(226, 221, 220);
+  background-color: rgb(226, 221, 222);
 }
