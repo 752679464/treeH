@@ -4,10 +4,93 @@ Page({
   /**
    * 页面的初始数据
    */
-  data: {
-
+  data: {yonghuming:'',
+    shoujihao:'',
+    denglumima:'',
+    querenmima:'',
+  },
+  username:function(e) {
+    // console.log(this.data.shoujihao)
+    this.data.yonghuming = e.detail.value
+    // console.log(this.data.shoujihao)
   },
 
+  phonenumber:function(e) {
+    // console.log(this.data.shoujihao)
+    this.data.shoujihao = e.detail.value
+    // console.log(this.data.shoujihao)
+  },
+
+  password:function(e) {
+    // console.log(this.data.denglumima)
+    this.data.denglumima = e.detail.value
+    // console.log(this.data.denglumima)
+  },
+
+  passwordack:function(e) {
+    // console.log(this.data.querenmima)
+    this.data.querenmima = e.detail.value
+    // console.log(this.data.querenmima)
+  },
+
+  regest:function (e) {
+    var that = this
+    // console.log(this.data.yonghuming)
+    if(that.data.yonghuming == ''){
+      wx.showModal({
+        title: '提示',
+        content: '请输入用户名',
+        showCancel:false,
+        success(res){}
+      })
+    }
+    else if(that.data.shoujihao == ''){
+      wx.showModal({
+        title: '提示',
+        content: '请输入手机号',
+        showCancel:false,
+        success(res){}
+      })
+    }
+    // else if 校验手机号是否正确
+    else if(that.data.denglumima == ''){
+      wx.showModal({
+        title: '提示',
+        content: '请输入登录密码',
+        showCancel:false,
+        success(res){}
+      })
+    }
+    else if(that.data.querenmima == ''){
+      wx.showModal({
+        title: '提示',
+        content: '请输入确认密码',
+        showCancel:false,
+        success(res){}
+      })
+    }
+    else if(that.data.querenmima != that.data.denglumima){
+      wx.showModal({
+        title: '提示',
+        content: '两次密码不一致',
+        showCancel:false,
+        success(res){}
+      })
+    }
+    else{
+    console.log("success")
+    }
+  },
+
+  sigin:function(e) {
+    console.log("ddd")
+
+    // wx.redirectTo({
+    //   url: '/pages/login/login',
+      wx.navigateBack({
+        delta: 1,
+    })//跳转页面
+  },
   /**
    * 生命周期函数--监听页面加载
    */

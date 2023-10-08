@@ -1,2 +1,16 @@
 <!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+<view class="background">
+  <view class="fir">
+    <input type="text" placeholder="用户名" placeholder-class="plas" class="input" bindinput="usrname" />
+  </view>
+
+  <view class="sec">
+    <input type="password" placeholder-class="plas" placeholder="登录密码" class="input" bindinput="password" />
+  </view>
+
+  <view class="click">登录
+    <view class="cha" bind:tap="signup">
+
+    </view>
+  </view>
+</view>

@@ -1,1 +1,73 @@
 /* pages/login/login.wxss */
+page{
+  left: 0rpx;
+  right: 0rpx;
+  background-color: white;
+}
+
+.fir{
+  width: 80%;
+  height: 100rpx;
+  margin-top: 80rpx;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  background-color: gray;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.plas{
+  font-size: 30rpx;
+  color: black;
+}
+
+.input{
+  margin: auto;
+  margin-left: 20rpx;
+  width: 100%;
+  line-height: 100rpx;
+  font-size: 30rpx;
+  color: black;
+
+}
+
+.sec{
+  width: 80%;
+  height: 100rpx;
+  margin-top: 20rpx;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  background-color: gray;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.click{
+  background-color: red;
+  width: 90%;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin:auto;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 90rpx;
+  text-align: center;
+  font-size: 33rpx;
+  color: white;
+
+}
+
+.cha{
+  width: 90%;
+  height: 50rpx;
+  margin: auto;
+  margin-top: 30rpx;
+  margin-left: 5%;
+  margin-right: 5%;
+}

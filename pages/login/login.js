@@ -7,6 +7,16 @@ Page({
   data: {
 
   },
+  signup:function (e) {
+    wx.redirectTo({
+      url: '/pages/roll/roll',
+  })
+  },
+
+  regest:function (e) {
+    var that = this
+    
+  },
 
   /**
    * 生命周期函数--监听页面加载
